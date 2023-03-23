@@ -8,6 +8,6 @@ sudo systemctl enable jenkins
 sudo systemctl start jenkins 
 sudo yum install git -y
 cd /opt/
-wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
-tar -xvzf apache-maven-3.8.6-bin.tar.gz 
-mv apache-maven-3.8.6 maven
+wget https://dlcdn.apache.org/maven/maven-3/3.9.1/binaries/apache-maven-3.9.1-bin.tar.gz
+tar -xvzf apache-maven-3.9.1-bin.tar.gz 
+mv apache-maven-3.9.1 maven
