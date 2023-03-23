@@ -1,0 +1,47 @@
+1. Create amazon linux instance for Jenkins
+- Open port 8080 and 22
+- install java / jenkins / git / maven
+- install git plugin in jenkins
+- create job to full code from github
+- setup maven 
+- setup environment variable JAVA_HOME, M2, M2_HOME
+- Download maven package binary tar.gz
+- unzip it
+- go to home directory and edit .bash_profile file and add paths
+	M2_HOME=/opt/maven
+	M2=/opt/maven/bin
+	JAVA_HOME= /usr/lib/jvm/java-11-openjdk....
+- under path secton add :$M2_HOME:$M2:$JAVA_HOME
+- RUN COMMAND 'source .bash_profile'
+- Install maven plugin in jenkins
+- go yo Global tool configuration add path of java and add maven path. "/opt/maven"
+- Create maven job, add in gols "Clean install"
+
+2.Setup Tomcat Server
+- open port 8080/22
+- Install java
+- Install tomcat-8
+- update context.xml
+- add user name passwords
+- add "deploy to container" plugin in jenking
+- add deployer user and password tomacat credntials into global config management in Jenkins
+
+3. Install Docker in same system
+- solve error of conatiner
+- create docker file
+- add plugin publish over ssh to jenkins
+- configure password less authentication
+- add server in jenkins
+- add post build action "copy artifact over ssh"
+- create path /opt/docker in docker server
+
+4. Create Playbook for Ansible Server
+- docker login / install Ansible
+- run playbook from jenkins server
+- Delete existing container and image
+
+5. Setups Eksctl
+- Install AWS CLI
+- download and install kubectl
+- download and install eksctl
+- create IAM role with admin access

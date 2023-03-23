@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasks:   
+	- name: build image
+	  shell: docker image build -t app:latest .
+
+  - name: Push Image to docker hub
+	  shell: docker tag app:latest krushna1512/app:latest
+
+  - name: Push Image to docker hub
+	  shell: docker push krushna1512/app:latest
