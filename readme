@@ -45,3 +45,6 @@
 - download and install kubectl
 - download and install eksctl
 - create IAM role with admin access
+- create manifest files for depolyment and service
+- create playbook to run deployment and service
+- finally add rollout command "kubectl rollout restart deploment_name"
