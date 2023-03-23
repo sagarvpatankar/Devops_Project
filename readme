@@ -17,7 +17,7 @@
 - go yo Global tool configuration add path of java and add maven path. "/opt/maven"
 - Create maven job, add in gols "Clean install"
 
-2.Setup Tomcat Server
+2. Setup Tomcat Server
 - open port 8080/22
 - Install java
 - Install tomcat-8
