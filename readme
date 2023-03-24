@@ -55,5 +55,9 @@
 
 eksctl create cluster --name demoproject \
 --region ap-south-1 \
---node-type t2.micro \
+--node-type t2.micro 
+
+***********************************To delete Cluster******************************************
+
+eksctl delete cluster --name demoproject --region ap-south-1
 
