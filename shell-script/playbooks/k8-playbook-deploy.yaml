@@ -1,0 +1,7 @@
+---
+- hosts: k8
+  become: yes
+  tasks:
+   - name: deploy app on k8
+     command: /root/bin/kubectl apply -f /root/deployment.yaml
+ 

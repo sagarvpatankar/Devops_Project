@@ -1,0 +1,9 @@
+---
+- hosts: k8
+  become: yes
+  tasks:
+   - name: deploy app on k8
+     command: /root/bin/kubectl apply -f /root/service.yaml
+
+   - name: rollout updates
+     command: /root/bin/kubectl rollout restart deployment.apps/app
