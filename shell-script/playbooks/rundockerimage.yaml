@@ -1,4 +1,4 @@
---- 
+---
 - hosts: demo
   become: true
   tasks:
@@ -11,9 +11,9 @@
     ignore_errors: yes
 
   - name: remove image
-    shell: docker rmi krushna1512/app:latest
+    shell: docker rmi 7385797300/app:latest app:latest 7385797300/app
     ignore_errors: yes
-  
+
   - name: Run Container
-    shell: docker run -d --name app -p 8080:8080 krushna1512/app:latest 
+    shell: docker run -d --name app -p 8080:8080 7385797300/app:latest
 

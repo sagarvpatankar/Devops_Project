@@ -11,7 +11,7 @@
           <label for="uname"><b>Mobile</b></label>
           <input type="text" placeholder="Enter Username" name="uname" required>
       
-          <label for="psw"><b>Password</b></label>
+          <label for="psw"><b>Phonenumber</b></label>
           <input type="password" placeholder="Enter " name="psw" required>
       
           <button type="submit">Login</button>
