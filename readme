@@ -10,7 +10,7 @@
 - go to home directory and edit .bash_profile file and add paths
 	M2_HOME=/opt/maven
 	M2=/opt/maven/bin
-	JAVA_HOME= /usr/lib/jvm/java-11-openjdk....
+	JAVA_HOME= /usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.amzn2.0.1.x86_64
 - under path secton add :$M2_HOME:$M2:$JAVA_HOME
 - RUN COMMAND 'source .bash_profile'
 - Install maven plugin in jenkins
@@ -40,11 +40,23 @@
 - run playbook from jenkins server
 - Delete existing container and image
 
-5. Setups Eksctl
+5. Setups Eksctl K8's
 - Install AWS CLI
 - download and install kubectl
 - download and install eksctl
-- create IAM role with admin access
+- create IAM role with admin access(EC2 full access, iam full access, eks cluster policy, clodformation full access, AdministratorAccess )
 - create manifest files for depolyment and service
 - create playbook to run deployment and service
 - finally add rollout command "kubectl rollout restart deploment_name"
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+***********************************To create k8 cluster****************************************
+
+eksctl create cluster --name demoproject \
+--region ap-south-1 \
+--node-type t2.micro \
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.0.30.zip" -o "awscliv2.zip" 
+unzip awscliv2.zip 
+sudo ./aws/install
