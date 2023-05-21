@@ -37,6 +37,7 @@
 
 4. Create Playbook for Ansible Server
 - docker login / install Ansible
+- create playbook for dockerbuild and dockerdeploy
 - run playbook from jenkins server
 - Delete existing container and image
 
