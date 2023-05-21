@@ -61,3 +61,23 @@ eksctl create cluster --name demoproject \
 
 eksctl delete cluster --name demoproject --region ap-south-1
 
+***********************************************************************************************
+
+Install chocolaty in Windows Powershell
+1. Install it using below command (Run it in Windows powershell as Admin)
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+2. Install awscli using choco
+
+choco install awscli -y  
+
+3. Install kubectl 
+
+choco install kubernetes-cli
+
+4. Install EKSCTL 
+
+chocolatey install eksctl
+
+
