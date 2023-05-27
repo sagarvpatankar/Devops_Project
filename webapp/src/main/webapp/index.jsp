@@ -48,7 +48,7 @@ button {
     <center> <h1> Devops </h1> </center> 
     <form>
         <div class="container"> 
-            <label>Username : </label> 
+            <label>FirstName : </label> 
             <input type="text" placeholder="name" name="username" required>
             <label>Password : </label> 
             <input type="password" placeholder="Enter Password" name="password" required>
