@@ -45,7 +45,7 @@ button {
 </style> 
 </head>  
 <body>  
-    <center> <h1> Devops </h1> </center> 
+    <center> <h1> myproject </h1> </center> 
     <form>
         <div class="container"> 
             <label>FirstName : </label> 
